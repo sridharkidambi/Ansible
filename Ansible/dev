@@ -1,0 +1,5 @@
+[webserver]
+ sk.com
+
+ [control]
+  control ansible-connection=local
