@@ -1,0 +1,18 @@
+---
+  - hosts: webserver
+    tasks:
+      - name: sk task1
+        command: hostname
+  - hosts: webserver
+    tasks:
+      - name: execute a script
+        command: ls
+  - hosts: webserver
+    sudo: yes
+    tasks:
+      - name: install ngnix
+        apt:  
+          name: nginx
+          state: present
+          update_cache: yes 
+

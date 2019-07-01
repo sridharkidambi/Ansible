@@ -1,5 +1,5 @@
 [webserver]
- sk.com ansible_connection=ssh ansible_ssh_user=sridharkidambi ansible_ssh_pass=Bra1nm1l
+ sk.com ansible_connection=ssh ansible_ssh_user=vagrant ansible_ssh_pass=vagrant
 
  #[control]
   #control ansible-connection=local
