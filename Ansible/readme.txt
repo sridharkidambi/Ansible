@@ -10,3 +10,9 @@ vagrant:
 5.vagrant ssh
 
 patterns are used for  subset selections
+
+ansible --list-hosts all   list all the hosts.
+ansible -m ping webserver ping the servers.
+ansible -m command  -a "hostname" all -> runs a command
+
+become used for super user access enablement.
