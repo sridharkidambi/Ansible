@@ -16,3 +16,4 @@ ansible -m ping webserver ping the servers.
 ansible -m command  -a "hostname" all -> runs a command
 
 become used for super user access enablement.
+Genia is a templating language library {{item}} used in python.  with_items
