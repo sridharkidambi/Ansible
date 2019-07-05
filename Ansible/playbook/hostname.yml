@@ -31,6 +31,23 @@
             - libapache2-mod-wsgi
             - python-pip
             - python-virtualenv
-          
+      - name: start nginx
+        service: name=nginx state=started enabled=yes  
 
+      # - name: start apache
+      #   service: name=apache2 state=started enabled=yes           
+      - name: start mysql
+        service: name=mysql state=started enabled=yes           
+      - name: ensure mod_wsgi enabled
+        apache2_module: state=present name=wsgi 
+        # notify: restart apache2 
+      - name: Copy Demo app source
+        copy: src=/Users/sridharkidambi/sridharkidambis/JavaWorkspace/spring5/spring5webapp/target/spring5webapp-0.0.1.jar dest=/var/www/demo mode=0755
+        notify: restart apache2 
+
+
+
+    handlers:
+      - name: restart apache2
+        service: name=apache2 status=restarted
 
