@@ -42,7 +42,7 @@
         apache2_module: state=present name=wsgi 
         # notify: restart apache2 
       - name: Copy Demo app source
-        copy: src=/Users/sridharkidambi/sridharkidambis/JavaWorkspace/spring5/spring5webapp/target/spring5webapp-0.0.1.jar dest=/var/www/demo mode=0755
+        copy: src=/Users/sridharkidambi/sridharkidambis/JavaWorkspace/spring5/spring5webapp dest=/var/www/demo mode=0755
         notify: restart apache2 
 
 

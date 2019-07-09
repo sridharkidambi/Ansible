@@ -17,3 +17,7 @@ ansible -m command  -a "hostname" all -> runs a command
 
 become used for super user access enablement.
 Genia is a templating language library {{item}} used in python.  with_items
+
+lineinfile:insert a line in a particular file.
+wait_for : to check if the particular port is available for connection ;it validates it 
+wait_for: port=80 state=drained
