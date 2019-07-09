@@ -30,4 +30,8 @@ template: for file ro render with substitution. ( different to file copy)
 
  Include 
  includes multiple yml files for one set execution
- 
+ ansible -m setup sk.com  :to display all  the gathering facts of a instance.
+
+variable precedence  list:
+
+<img width="871" alt="Screenshot 2019-07-09 at 10 48 13 PM" src="https://user-images.githubusercontent.com/8262606/60909382-bdd51600-a29b-11e9-923e-f0743004563b.png">
