@@ -21,3 +21,9 @@ Genia is a templating language library {{item}} used in python.  with_items
 lineinfile:insert a line in a particular file.
 wait_for : to check if the particular port is available for connection ;it validates it 
 wait_for: port=80 state=drained
+register: will save teh executed steps results
+template: for file ro render with substitution. ( different to file copy)
+ jinja2 template {{value }} to print the values. For loop is in '{%', ends with 'endfor' and the variable is rendered with '{{'
+ Roles:
+ code reuse logical grouping baased on the components
+ ansible-galaxy init control
