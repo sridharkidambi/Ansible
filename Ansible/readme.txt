@@ -27,3 +27,7 @@ template: for file ro render with substitution. ( different to file copy)
  Roles:
  code reuse logical grouping baased on the components
  ansible-galaxy init control
+
+ Include 
+ includes multiple yml files for one set execution
+ 
