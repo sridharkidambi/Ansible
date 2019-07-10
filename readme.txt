@@ -34,4 +34,4 @@ template: for file ro render with substitution. ( different to file copy)
 
 variable precedence  list:
 
-<img width="871" alt="Screenshot 2019-07-09 at 10 48 13 PM" src="https://user-images.githubusercontent.com/8262606/60909382-bdd51600-a29b-11e9-923e-f0743004563b.png">
+<img width="871" alt="Screenshot 2019-07-09 at 10 48 13 PM" src="https://user-images.githubusercontent.com/8262606/60943307-2efbe400-a303-11e9-8be9-cf884e5d1e11.png">
