@@ -35,3 +35,35 @@ template: for file ro render with substitution. ( different to file copy)
 variable precedence  list:
 
 <img width="871" alt="Screenshot 2019-07-09 at 10 48 13 PM" src="https://user-images.githubusercontent.com/8262606/60909382-bdd51600-a29b-11e9-923e-f0743004563b.png">
+Group_vars:
+used to put the global varaibles across playbooks.
+
+Vault for encrypting:
+create: ansible-vault create vault
+edit: ansible-vault edit vault
+ansible-playbook  --ask-vault-pass
+
+Ansible hub: reusable ,sharing ansible content
+
+
+limit:
+limit the hosts while execution --limit server#1
+
+### time taken for execution:
+time ansible-playbook playbook/installs.yml --list-tags
+
+### tags associted:
+ansible-playbook playbook/installs.yml --list-tags
+ansible-playbook playbook/installs.yml --tags "packages"
+ansible-playbook playbook/installs.yml --skip-tags "packages"
+
+ignore_errors: true ( to excluede error while executing a task.)
+
+--step ( used to run a particular step from command line.)
+--start-at-task ( to start from a particular task.)
+ansible-playbook --syntax-check site.yml
+ansible-playbook  --check  app.yml ( to check the steps)
+-debug: var=someregister variable(for an example).
+
+to retry with the inbbuilt retry logic from ansible use the below
+ansible-playbook app.yml --limit @path provided by ansible.

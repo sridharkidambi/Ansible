@@ -4,3 +4,4 @@
           name: mysql-server
           state: present
           update_cache: yes 
+        tags: ['packages']
