@@ -34,6 +34,7 @@ template: for file ro render with substitution. ( different to file copy)
 
 variable precedence  list:
 
+<<<<<<< HEAD
 <img width="871" alt="Screenshot 2019-07-09 at 10 48 13 PM" src="https://user-images.githubusercontent.com/8262606/60909382-bdd51600-a29b-11e9-923e-f0743004563b.png">
 Group_vars:
 used to put the global varaibles across playbooks.
@@ -67,3 +68,6 @@ ansible-playbook  --check  app.yml ( to check the steps)
 
 to retry with the inbbuilt retry logic from ansible use the below
 ansible-playbook app.yml --limit @path provided by ansible.
+=======
+<img width="871" alt="Screenshot 2019-07-09 at 10 48 13 PM" src="https://user-images.githubusercontent.com/8262606/60943307-2efbe400-a303-11e9-8be9-cf884e5d1e11.png">
+>>>>>>> b1ed89c473b08cfadde66ad4367fa7ffe8d9350e
